@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { TodoComponent } from './todo/todo.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { RegisterFormComponent } from './register-form/register-form.component';
+import { LoginFormComponent } from './login-form/login-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoComponent,
-    RegisterFormComponent
+    RegisterFormComponent,
+    LoginFormComponent
   ],
   imports: [
     BrowserModule,

@@ -79,8 +79,7 @@
     <span *ngIf="registerForm.get('phone').hasError('pattern')">Phone must start with +84 followed by 9 or 10 digits.</span>
   </div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary" [disabled]="registerForm.status==='INVALID'">Submit</button>
 </form>
-
-
-
+<pre>{{registerForm.value| json}}</pre>
+<pre>{{registerForm.status| json}}</pre>
